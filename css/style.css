@@ -284,4 +284,29 @@ html, body {
     overflow-x: hidden;
     width: 100%;
 }
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  nav ul {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #1e7c7c;
+    padding: 10px 0;
+  }
 
+  nav ul.show {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  main h1 {
+    font-size: 1.4rem;
+  }
+
+  main p, main li {
+    font-size: 0.95rem;
+  }
+}
