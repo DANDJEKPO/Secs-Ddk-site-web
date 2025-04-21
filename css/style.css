@@ -305,16 +305,16 @@ header {
 
 /* IMAGES */
 img {
-  max-width: 100%;
+  max-width: 80%;
   height: auto;
   display: block;
 }
 
 /* FORMS */
 input, textarea, select, button {
-  width: 80%;
+  width: 50%;
   padding: 10px;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
 }
