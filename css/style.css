@@ -62,7 +62,7 @@ nav a:hover {
 
 /* Hero Section */
 .hero {
-    background-image: url('https://via.placeholder.com/1500x800'); /* Remplacer par une image propre */
+    background-image: url('https://raw.githubusercontent.com/DANDJEKPO/Secs-Ddk-site-web/refs/heads/main/3.jpg'); /* Remplacer par une image propre */
     background-size: cover;
     background-position: center;
     color: white;
