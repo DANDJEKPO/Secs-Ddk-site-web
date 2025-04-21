@@ -328,11 +328,7 @@ nav ul {
   flex-wrap: wrap;
 }
 
-nav a {
-  text-decoration: none;
-  color: white;
-  font-weight: bold;
-}
+
 
 /* MAIN */
 main {
@@ -356,17 +352,11 @@ img {
   display: block;
 }
 
-/* FOOTER */
-footer {
-  background-color: #ddd;
-  text-align: center;
-  padding: 15px;
-  margin-top: 30px;
-}
+
 
 /* TABLES */
 table {
-  width: 100%;
+  width: 50%;
   border-collapse: collapse;
   margin-top: 15px;
 }
