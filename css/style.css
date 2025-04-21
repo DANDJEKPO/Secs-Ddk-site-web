@@ -280,50 +280,5 @@ footer p {
     height: 110px;
     width: auto;
 }
-/* Reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
 
-.container {
-  width: 100%;
-  max-width: 1200px; /* Limiter la largeur maximale du contenu */
-  padding: 0 20px;
-}
-
-/* IMAGES */
-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-}
-
-/* RESPONSIVE */
-@media (max-width: 768px) {
-  nav ul {
-    display: none;
-    flex-direction: column;
-    width: 100%;
-    background-color: #1e7c7c;
-    padding: 10px 0;
-  }
-
-  nav ul.show {
-    display: flex;
-  }
-
-  .menu-toggle {
-    display: block;
-  }
-
-  main h1 {
-    font-size: 1.4rem;
-  }
-
-  main p, main li {
-    font-size: 0.95rem;
-  }
-}
