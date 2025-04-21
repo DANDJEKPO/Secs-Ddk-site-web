@@ -38,39 +38,36 @@ header h1 {
 /* Menu principal en pleine largeur */
 nav {
   width: 100%;
-  background-color: #00bfa6; /* Teal clair */
+  background-color: #009688; /* Bleu-vert élégant */
   display: flex;
-  justify-content: center;
+  justify-content: center; /* Centre les liens */
   align-items: center;
   padding: 12px 0;
   box-sizing: border-box;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+/* Conteneur pour les liens du menu si tu veux encore mieux contrôler */
+nav .menu-links {
+  display: flex;
+  gap: 20px; /* Espace entre les liens */
+}
+
 /* Liens du menu */
 nav a {
-  color: #ffffff; /* Texte blanc */
+  color: #ffffff;
   text-decoration: none;
-  padding: 12px 24px;
-  margin: 0 5px;
-  display: inline-block;
+  padding: 10px 15px;
   font-weight: bold;
-  font-size: 16px;
-  transition: background-color 0.3s ease, color 0.3s ease;
-  border-radius: 6px;
+  transition: background 0.3s ease;
 }
 
 /* Effet au survol */
 nav a:hover {
-  background-color: #009e8c; /* Teinte plus foncée au survol */
-  color: #e0f7f4;
+  background-color: #00796b; /* Vert plus foncé au survol */
+  border-radius: 4px;
 }
 
-/* Effet au survol */
-nav a:hover {
-  background-color: #555;
-  border-radius: 5px;
-}
 
 /* Hero Section */
 .hero {
