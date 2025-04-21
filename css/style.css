@@ -291,11 +291,6 @@ html, body {
   box-sizing: border-box;
 }
 
-.container {
-  width: 100%;
-  max-width: 1200px; /* Limiter la largeur maximale du contenu */
-  padding: 0 20px;
-}
 /* HEADER */
 header {
   background-color: #1e7c7c; /* Bleu-vert */
@@ -307,24 +302,6 @@ header {
   flex-wrap: wrap;
   width: 100%;
 }
-.logo {
-  font-size: 1.5rem;
-  font-weight: bold;
-}
-/* MAIN */
-main {
-  margin-top: 20px;
-}
-
-main h1 {
-  font-size: 1.8rem;
-  margin-bottom: 10px;
-}
-
-main p, main li {
-  font-size: 1rem;
-  margin-bottom: 10px;
-}
 
 /* IMAGES */
 img {
@@ -335,7 +312,7 @@ img {
 
 /* FORMS */
 input, textarea, select, button {
-  width: 100%;
+  width: 80%;
   padding: 10px;
   margin-bottom: 15px;
   border: 1px solid #ccc;
