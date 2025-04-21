@@ -286,94 +286,20 @@ footer p {
   padding: 0;
   box-sizing: border-box;
 }
-
-/* Base */
-body {
-  font-family: 'Segoe UI', sans-serif;
-  background-color: #f9f9f9;
-  color: #222;
-  line-height: 1.6;
-  padding: 10px;
-}
-
-/* HEADER */
-header {
-  background-color: #046b35;
-  color: #fff;
-  padding: 15px 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-.logo {
-  font-size: 1.5rem;
-  font-weight: bold;
-}
-
-.menu-toggle {
-  font-size: 2rem;
-  background: none;
-  border: none;
-  color: white;
-  cursor: pointer;
-  display: none;
-}
-
-nav ul {
-  display: flex;
-  list-style: none;
-  gap: 15px;
-  flex-wrap: wrap;
-}
-
-
-
-/* MAIN */
-main {
-  margin-top: 20px;
-}
-
 main h1 {
   font-size: 1.8rem;
-  margin-bottom: 10px;
 }
 
-main p, main li {
-  font-size: 1rem;
-  margin-bottom: 10px;
+input, textarea {
+  width: 100%;
 }
+
 
 /* IMAGES */
 img {
   max-width: 100%;
   height: auto;
   display: block;
-}
-
-
-
-/* TABLES */
-table {
-  width: 50%;
-  border-collapse: collapse;
-  margin-top: 15px;
-}
-
-th, td {
-  padding: 10px;
-  border: 1px solid #ccc;
-  text-align: left;
-}
-
-/* FORMS */
-input, textarea, select, button {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 15px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
 }
 
 /* RESPONSIVE */
