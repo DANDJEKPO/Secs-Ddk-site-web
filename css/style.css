@@ -287,18 +287,6 @@ footer p {
   box-sizing: border-box;
 }
 
-/* Base */
-body {
-  font-family: 'Segoe UI', sans-serif;
-  background-color: #f9f9f9;
-  color: #222;
-  line-height: 1.6;
-  padding: 10px;
-  display: flex;
-  justify-content: center; /* Centrer le contenu */
-  align-items: flex-start; /* Aligner le contenu en haut */
-  min-height: 100vh; /* S'assurer que le contenu occupe toute la hauteur de l'écran */
-}
 
 .container {
   width: 100%;
@@ -306,96 +294,11 @@ body {
   padding: 0 20px;
 }
 
-/* HEADER */
-header {
-  background-color: #1e7c7c; /* Bleu-vert */
-  color: #fff;
-  padding: 15px 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  width: 100%;
-}
-
-.logo {
-  font-size: 1.5rem;
-  font-weight: bold;
-}
-
-.menu-toggle {
-  font-size: 2rem;
-  background: none;
-  border: none;
-  color: white;
-  cursor: pointer;
-  display: none;
-}
-
-nav ul {
-  display: flex;
-  list-style: none;
-  gap: 15px;
-  flex-wrap: wrap;
-}
-
-nav a {
-  text-decoration: none;
-  color: white;
-  font-weight: bold;
-}
-
-/* MAIN */
-main {
-  margin-top: 20px;
-}
-
-main h1 {
-  font-size: 1.8rem;
-  margin-bottom: 10px;
-}
-
-main p, main li {
-  font-size: 1rem;
-  margin-bottom: 10px;
-}
-
 /* IMAGES */
 img {
   max-width: 100%;
   height: auto;
   display: block;
-}
-
-/* FOOTER */
-footer {
-  background-color: #ddd;
-  text-align: center;
-  padding: 15px;
-  margin-top: 30px;
-  width: 100%;
-}
-
-/* TABLES */
-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-top: 15px;
-}
-
-th, td {
-  padding: 10px;
-  border: 1px solid #ccc;
-  text-align: left;
-}
-
-/* FORMS */
-input, textarea, select, button {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 15px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
 }
 
 /* RESPONSIVE */
