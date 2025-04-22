@@ -343,6 +343,41 @@ input, textarea, select, button {
   main h1 {
     font-size: 1.4rem;
   }
+.notre-discipline {
+  padding: 40px 20px;
+  background-color: #f0f9f8;
+  text-align: center;
+}
+
+.notre-discipline h2 {
+  color: #00796b;
+  margin-bottom: 30px;
+  font-size: 28px;
+}
+
+.discipline-galerie {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.discipline-item {
+  max-width: 300px;
+}
+
+.discipline-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.discipline-item p {
+  margin-top: 10px;
+  color: #333;
+  font-size: 16px;
+}
 
   main p, main li {
     font-size: 0.95rem;
