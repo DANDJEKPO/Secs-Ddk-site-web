@@ -126,7 +126,86 @@
 
   <!-- Pied de page -->
   <footer class="bg-green-600 text-white text-center p-4 mt-10">
-    © 2025 SECS DDK ÉLEVAGE - Tous droits réservés
+    <!-- Footer -->
+        <footer>
+           <footer style="background-color:#1e293b; color:white; padding:30px 20px; text-align:center;">
+  <div>
+    <h3>SECS DDK ELEVAGE</h3>
+    <p>Email : <a href="mailto:dandjekpoabel03@gmail.com" style="color:#38bdf8;">dandjekpoabel03@gmail.com</a></p>
+    <p>Téléphone : 
+      <a href="tel:+229199648190" style="color:#38bdf8;">Moov: 0199648190</a> | 
+      <a href="tel:+229154161300" style="color:#38bdf8;">MTN: 0154161300</a>
+    </p>
+  </div>
+  <div style="margin-top:15px;">
+    <a href="https://www.facebook.com" target="_blank" style="margin: 0 10px; color:white;">
+      <i class="fab fa-facebook-f"></i>
+    </a>
+    <a href="https://www.instagram.com" target="_blank" style="margin: 0 10px; color:white;">
+      <i class="fab fa-instagram"></i>
+    </a>
+    <a href="https://wa.me/229199648190" target="_blank" style="margin: 0 10px; color:white;">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+  </div>
+  <p style="margin-top:20px; font-size:14px;">&copy; 2025 SECS DDK ELEVAGE. Tous droits réservés.</p>
+</footer>
+
+<!-- N'oublie pas de charger Font Awesome dans ton HTML -->
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+        </footer>
+
+    </div> <!-- Fin de #content -->
+
+    <!-- Script -->
+    <script>
+        // Afficher le contenu après 3 secondes
+        setTimeout(function() {
+            document.getElementById('loader').style.display = 'none';
+            document.getElementById('content').style.display = 'block';
+        }, 3000);
+    </script>
+
+    <script src="js/script.js"></script>
+<!-- POPUP BIENVENUE SECS DDK ELEVAGE -->
+<div id="welcomePopup" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.7); z-index:9999; justify-content:center; align-items:center;">
+  <div style="background:#fff; padding:30px; border-radius:12px; max-width:600px; text-align:left; box-shadow:0 10px 30px rgba(0,0,0,0.4); font-family:sans-serif;">
+    <h2 style="text-align:center; color:#1e293b;">Bienvenue sur le site officiel de SECS DDK ELEVAGE ! </h2>
+    <p>Bonjour et bienvenue sur notre plateforme !</p>
+    <p>Nous sommes ravis de vous accueillir dans l’univers de <strong>l’élevage moderne et intelligent</strong>. Ici, vous trouverez :</p>
+    <ul>
+      <li> Des <strong>formations professionnelles</strong> en élevage (lapins, porcs, volailles, poissons…)</li>
+      <li> Des <strong>conseils pratiques</strong> et des <strong>articles utiles</strong> pour réussir votre projet</li>
+      <li> Une <strong>boutique en ligne</strong> pour trouver vos animaux et équipements</li>
+      <li> Des <strong>services d’accompagnement</strong>, de plan d’affaires et de diagnostic vétérinaire</li>
+    </ul>
+    <p>🔔 <strong>N’oubliez pas de vous abonner à notre newsletter</strong> pour recevoir nos dernières publications !</p>
+    <p><strong>📞 Pour plus d’infos :</strong><br>
+      📧 <a href="mailto:dandjekpoabel03@gmail.com" style="color:#1e40af;">dandjekpoabel03@gmail.com</a><br>
+      📱 Moov : 0199648190 / MTN : 0154161300
+    </p>
+    <p style="text-align:center; font-weight:bold;"> Explorez, apprenez et réussissez avec SECS DDK ELEVAGE !</p>
+    <div style="text-align:center; margin-top:20px;">
+      <button onclick="closePopup()" style="padding:10px 20px; background:#1e293b; color:white; border:none; border-radius:5px; cursor:pointer;">Fermer</button>
+    </div>
+  </div>
+</div>
+
+<!-- SCRIPT POUR AFFICHER UNE SEULE FOIS -->
+<script>
+  function closePopup() {
+    document.getElementById('welcomePopup').style.display = 'none';
+    localStorage.setItem('popupShown', 'true');
+  }
+
+  window.onload = function() {
+    if (!localStorage.getItem('popupShown')) {
+      document.getElementById('welcomePopup').style.display = 'flex';
+    }
+  };
+</script>
+
   </footer>
 
   <!-- Script JS pour le chat -->
