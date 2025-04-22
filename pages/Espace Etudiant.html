@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+ <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SECS DDK ÉLEVAGE - Formation, Vente et Conseils en Élevage au Bénin</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" href="https://raw.githubusercontent.com/DANDJEKPO/S-DDK-ELEVAGE/refs/heads/main/favicon-32x32.png" type="image/x-icon">
+    <link rel="apple-touch-icon" href="https://raw.githubusercontent.com/DANDJEKPO/S-DDK-ELEVAGE/refs/heads/main/favicon-32x32.png">
+
+    <!-- Feuille de style -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Indicateur de chargement -->
+    <div class="loader" id="loader">
+        <p>Connexion...</p>
+    </div>
+
+    <!-- Contenu principal -->
+    <div id="content" style="display: none;">
+
+        <!-- Début de l'en-tête -->
+<header class="site-header">
+    <div class="header-container">
+        <!-- Logo cliquable -->
+        <a href="index.html" class="logo">
+            <img src="images/SECS.jpg" alt="Logo SECS DDK ELEVAGE">
+        </a>
+
+        <!-- Titre et slogan -->
+        <div class="site-title">
+            <h1>SECS DDK ELEVAGE</h1>
+            <p>Élevage, Ventes, Suivi-Conseils et Formations</p>
+        </div>
+    </div>
+
+    <!-- Texte défilant -->
+    <div class="scrolling-text">
+        <p><span class="scroll-text-wrapper">
+            <span class="scroll-text">Rejoignez-nous dès aujourd’hui et donnez un nouvel élan à votre avenir ! 🚀 Avec SECS DDK ÉLEVAGE, vous bénéficiez de formations de qualité, d’un accompagnement sur mesure et des meilleures opportunités pour réussir. N’attendez plus, votre succès commence ici !</span>
+            <span class="scroll-text">Rejoignez-nous dès aujourd’hui et donnez un nouvel élan à votre avenir ! 🚀 Avec SECS DDK ÉLEVAGE, vous bénéficiez de formations de qualité, d’un accompagnement sur mesure et des meilleures opportunités pour réussir. N’attendez plus, votre succès commence ici !</span>
+        </span></p>
+        <p>Vous et Nous : <span class="rotate">🔄</span></p>
+    </div>
+
+    <!-- Barre de navigation -->
+    <nav>
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="pages/produits.html">Nos Produits</a></li>
+          <li><a href="pages/blog.html">Blog</a></li>
+          <li><a href="pages/services.html">Services</a></li>
+          <li><a href="pages/formations.html">Formations</a></li>
+        </ul>
+      </nav>    
+</header>
+
+  <!-- En-tête -->
+  <header class="bg-green-600 text-white p-6 text-center">
+    <h1 class="text-3xl font-bold">Espace Etudiant</h1>
+    <p class="text-lg">Téléchargez vos cours et posez vos questions en direct</p>
+  </header>
+
+  <!-- Section des cours -->
+  <section class="p-6">
+    <h2 class="text-2xl font-semibold mb-4">Cours par animal de rente</h2>
+    
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <!-- Cours : Poulets de chair -->
+      <div class="bg-white p-4 rounded-lg shadow">
+        <h3 class="text-xl font-bold mb-2">Poulets de chair</h3>
+        <p class="mb-2">Les fondamentaux pour démarrer un élevage rentable.</p>
+        <a href="/docs/poulets-chair.pdf" download class="text-blue-600 hover:underline">📥 Télécharger le cours</a>
+      </div>
+
+      <!-- Cours : Poules pondeuses -->
+      <div class="bg-white p-4 rounded-lg shadow">
+        <h3 class="text-xl font-bold mb-2">Poules pondeuses</h3>
+        <p class="mb-2">Techniques de gestion d’un élevage de pondeuses.</p>
+        <a href="/docs/poules-pondeuses.pdf" download class="text-blue-600 hover:underline">📥 Télécharger le cours</a>
+      </div>
+
+      <!-- Cours : Lapins -->
+      <div class="bg-white p-4 rounded-lg shadow">
+        <h3 class="text-xl font-bold mb-2">Lapins</h3>
+        <p class="mb-2">Reproduction, alimentation et santé des lapins.</p>
+        <a href="/docs/lapins.pdf" download class="text-blue-600 hover:underline"> Télécharger le cours</a>
+      </div>
+
+      <!-- Cours : Porcs -->
+      <div class="bg-white p-4 rounded-lg shadow">
+        <h3 class="text-xl font-bold mb-2">Porcs</h3>
+        <p class="mb-2">Tout sur l’élevage porcin : reproduction, engraissement.</p>
+        <a href="/docs/porcs.pdf" download class="text-blue-600 hover:underline">📥 Télécharger le cours</a>
+      </div>
+
+      <!-- Cours : Poissons -->
+      <div class="bg-white p-4 rounded-lg shadow">
+        <h3 class="text-xl font-bold mb-2">Poissons</h3>
+        <p class="mb-2">Techniques d’aquaculture pour débutants et confirmés.</p>
+        <a href="/docs/poissons.pdf" download class="text-blue-600 hover:underline">📥 Télécharger le cours</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Zone de chat simple -->
+  <section class="bg-white p-6 mt-10 rounded-t-2xl shadow-inner">
+    <h2 class="text-2xl font-semibold mb-4">💬 Posez vos questions</h2>
+
+    <div class="max-w-2xl mx-auto">
+      <div id="chat-box" class="border h-64 p-4 overflow-y-auto bg-gray-100 rounded mb-4">
+        <p class="text-gray-600">Bienvenue dans l’espace de discussion ! Posez votre question ci-dessous 👇</p>
+      </div>
+
+      <div class="flex gap-2">
+        <input type="text" id="messageInput" placeholder="Écrivez votre question ici..." class="flex-grow p-2 border rounded" />
+        <button onclick="envoyerMessage()" class="bg-green-600 text-white px-4 py-2 rounded">Envoyer</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pied de page -->
+  <footer class="bg-green-600 text-white text-center p-4 mt-10">
+    <!-- Footer -->
+        <footer>
+           <footer style="background-color:#1e293b; color:white; padding:30px 20px; text-align:center;">
+  <div>
+    <h3>SECS DDK ELEVAGE</h3>
+    <p>Email : <a href="mailto:dandjekpoabel03@gmail.com" style="color:#38bdf8;">dandjekpoabel03@gmail.com</a></p>
+    <p>Téléphone : 
+      <a href="tel:+229199648190" style="color:#38bdf8;">Moov: 0199648190</a> | 
+      <a href="tel:+229154161300" style="color:#38bdf8;">MTN: 0154161300</a>
+    </p>
+  </div>
+  <div style="margin-top:15px;">
+    <a href="https://www.facebook.com" target="_blank" style="margin: 0 10px; color:white;">
+      <i class="fab fa-facebook-f"></i>
+    </a>
+    <a href="https://www.instagram.com" target="_blank" style="margin: 0 10px; color:white;">
+      <i class="fab fa-instagram"></i>
+    </a>
+    <a href="https://wa.me/229199648190" target="_blank" style="margin: 0 10px; color:white;">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+  </div>
+  <p style="margin-top:20px; font-size:14px;">&copy; 2025 SECS DDK ELEVAGE. Tous droits réservés.</p>
+</footer>
+
+<!-- N'oublie pas de charger Font Awesome dans ton HTML -->
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+        </footer>
+
+    </div> <!-- Fin de #content -->
+
+    <!-- Script -->
+    <script>
+        // Afficher le contenu après 3 secondes
+        setTimeout(function() {
+            document.getElementById('loader').style.display = 'none';
+            document.getElementById('content').style.display = 'block';
+        }, 3000);
+    </script>
+
+    <script src="js/script.js"></script>
+<!-- POPUP BIENVENUE SECS DDK ELEVAGE -->
+<div id="welcomePopup" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.7); z-index:9999; justify-content:center; align-items:center;">
+  <div style="background:#fff; padding:30px; border-radius:12px; max-width:600px; text-align:left; box-shadow:0 10px 30px rgba(0,0,0,0.4); font-family:sans-serif;">
+    <h2 style="text-align:center; color:#1e293b;">Bienvenue sur le site officiel de SECS DDK ELEVAGE ! </h2>
+    <p>Bonjour et bienvenue sur notre plateforme !</p>
+    <p>Nous sommes ravis de vous accueillir dans l’univers de <strong>l’élevage moderne et intelligent</strong>. Ici, vous trouverez :</p>
+    <ul>
+      <li> Des <strong>formations professionnelles</strong> en élevage (lapins, porcs, volailles, poissons…)</li>
+      <li> Des <strong>conseils pratiques</strong> et des <strong>articles utiles</strong> pour réussir votre projet</li>
+      <li> Une <strong>boutique en ligne</strong> pour trouver vos animaux et équipements</li>
+      <li> Des <strong>services d’accompagnement</strong>, de plan d’affaires et de diagnostic vétérinaire</li>
+    </ul>
+    <p>🔔 <strong>N’oubliez pas de vous abonner à notre newsletter</strong> pour recevoir nos dernières publications !</p>
+    <p><strong>📞 Pour plus d’infos :</strong><br>
+      📧 <a href="mailto:dandjekpoabel03@gmail.com" style="color:#1e40af;">dandjekpoabel03@gmail.com</a><br>
+      📱 Moov : 0199648190 / MTN : 0154161300
+    </p>
+    <p style="text-align:center; font-weight:bold;"> Explorez, apprenez et réussissez avec SECS DDK ELEVAGE !</p>
+    <div style="text-align:center; margin-top:20px;">
+      <button onclick="closePopup()" style="padding:10px 20px; background:#1e293b; color:white; border:none; border-radius:5px; cursor:pointer;">Fermer</button>
+    </div>
+  </div>
+</div>
+
+<!-- SCRIPT POUR AFFICHER UNE SEULE FOIS -->
+<script>
+  function closePopup() {
+    document.getElementById('welcomePopup').style.display = 'none';
+    localStorage.setItem('popupShown', 'true');
+  }
+
+  window.onload = function() {
+    if (!localStorage.getItem('popupShown')) {
+      document.getElementById('welcomePopup').style.display = 'flex';
+    }
+  };
+</script>
+
+  </footer>
+
+  <!-- Script JS pour le chat -->
+  <script>
+    function envoyerMessage() {
+      const input = document.getElementById("messageInput");
+      const message = input.value.trim();
+      if (message !== "") {
+        const chatBox = document.getElementById("chat-box");
+        const nouveauMessage = document.createElement("p");
+        nouveauMessage.className = "text-gray-800 mb-2";
+        nouveauMessage.textContent = "👤 Étudiant : " + message;
+        chatBox.appendChild(nouveauMessage);
+        chatBox.scrollTop = chatBox.scrollHeight;
+        input.value = "";
+      }
+    }
+  </script>
+
+</body>
+</html>
+
