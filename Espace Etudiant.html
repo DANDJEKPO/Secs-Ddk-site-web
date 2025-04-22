@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Espace Etudiant - SECS DDK ELEVAGE</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+  <!-- En-tête -->
+  <header class="bg-green-600 text-white p-6 text-center">
+    <h1 class="text-3xl font-bold">Espace Etudiant</h1>
+    <p class="text-lg">Téléchargez vos cours et posez vos questions en direct</p>
+  </header>
+
+  <!-- Section des cours -->
+  <section class="p-6">
+    <h2 class="text-2xl font-semibold mb-4">Cours par animal de rente</h2>
+    
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <!-- Cours : Poulets de chair -->
+      <div class="bg-white p-4 rounded-lg shadow">
+        <h3 class="text-xl font-bold mb-2">Poulets de chair</h3>
+        <p class="mb-2">Les fondamentaux pour démarrer un élevage rentable.</p>
+        <a href="/docs/poulets-chair.pdf" download class="text-blue-600 hover:underline">📥 Télécharger le cours</a>
+      </div>
+
+      <!-- Cours : Poules pondeuses -->
+      <div class="bg-white p-4 rounded-lg shadow">
+        <h3 class="text-xl font-bold mb-2">Poules pondeuses</h3>
+        <p class="mb-2">Techniques de gestion d’un élevage de pondeuses.</p>
+        <a href="/docs/poules-pondeuses.pdf" download class="text-blue-600 hover:underline">📥 Télécharger le cours</a>
+      </div>
+
+      <!-- Cours : Lapins -->
+      <div class="bg-white p-4 rounded-lg shadow">
+        <h3 class="text-xl font-bold mb-2">Lapins</h3>
+        <p class="mb-2">Reproduction, alimentation et santé des lapins.</p>
+        <a href="/docs/lapins.pdf" download class="text-blue-600 hover:underline"> Télécharger le cours</a>
+      </div>
+
+      <!-- Cours : Porcs -->
+      <div class="bg-white p-4 rounded-lg shadow">
+        <h3 class="text-xl font-bold mb-2">Porcs</h3>
+        <p class="mb-2">Tout sur l’élevage porcin : reproduction, engraissement.</p>
+        <a href="/docs/porcs.pdf" download class="text-blue-600 hover:underline">📥 Télécharger le cours</a>
+      </div>
+
+      <!-- Cours : Poissons -->
+      <div class="bg-white p-4 rounded-lg shadow">
+        <h3 class="text-xl font-bold mb-2">Poissons</h3>
+        <p class="mb-2">Techniques d’aquaculture pour débutants et confirmés.</p>
+        <a href="/docs/poissons.pdf" download class="text-blue-600 hover:underline">📥 Télécharger le cours</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Zone de chat simple -->
+  <section class="bg-white p-6 mt-10 rounded-t-2xl shadow-inner">
+    <h2 class="text-2xl font-semibold mb-4">💬 Posez vos questions</h2>
+
+    <div class="max-w-2xl mx-auto">
+      <div id="chat-box" class="border h-64 p-4 overflow-y-auto bg-gray-100 rounded mb-4">
+        <p class="text-gray-600">Bienvenue dans l’espace de discussion ! Posez votre question ci-dessous 👇</p>
+      </div>
+
+      <div class="flex gap-2">
+        <input type="text" id="messageInput" placeholder="Écrivez votre question ici..." class="flex-grow p-2 border rounded" />
+        <button onclick="envoyerMessage()" class="bg-green-600 text-white px-4 py-2 rounded">Envoyer</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pied de page -->
+  <footer class="bg-green-600 text-white text-center p-4 mt-10">
+    © 2025 SECS DDK ÉLEVAGE - Tous droits réservés
+  </footer>
+
+  <!-- Script JS pour le chat -->
+  <script>
+    function envoyerMessage() {
+      const input = document.getElementById("messageInput");
+      const message = input.value.trim();
+      if (message !== "") {
+        const chatBox = document.getElementById("chat-box");
+        const nouveauMessage = document.createElement("p");
+        nouveauMessage.className = "text-gray-800 mb-2";
+        nouveauMessage.textContent = "👤 Étudiant : " + message;
+        chatBox.appendChild(nouveauMessage);
+        chatBox.scrollTop = chatBox.scrollHeight;
+        input.value = "";
+      }
+    }
+  </script>
+
+</body>
+</html>
