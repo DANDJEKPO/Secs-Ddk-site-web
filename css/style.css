@@ -39,9 +39,11 @@ header h1 {
 nav {
   width: 100%;
   background-color: #009688; /* Bleu-vert élégant */
-  display: flex;
-  justify-content: center; /* Centre les liens */
-  align-items: center;
+    
+  flex-direction: row-reverse; /* Inverse l’ordre horizontal */
+  justify-content: flex-start; /* Colle les éléments à droite */
+}
+  justify-content: center;
   padding: 10px 0;
   box-sizing: border-box;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -75,7 +77,7 @@ nav a:hover {
     background-size: cover;
     background-position: center;
     color: white;
-    height: 25vh;
+    height: 15vh;
     display: flex;
     justify-content: center;
     align-items: center;
