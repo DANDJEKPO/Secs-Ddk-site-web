@@ -37,16 +37,13 @@ header h1 {
 
 /* Menu principal en pleine largeur */
 nav {
-  width: 100%;
-  background-color: #009688; /* Bleu-vert élégant */
-    
-  flex-direction: row-reverse; /* Inverse l’ordre horizontal */
-  justify-content: flex-start; /* Colle les éléments à droite */
-}
-  justify-content: center;
-  padding: 10px 0;
-  box-sizing: border-box;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: row-reverse; /* Aligne les éléments de droite vers la gauche */
+  justify-content: flex-start; /* Colle les éléments au bord droit */
+  gap: 20px; /* Espace entre les éléments */
+  background-color: #009688; /* Couleur de fond du menu */
+  padding: 15px 30px;
+  font-family: Arial, sans-serif;
 }
 
 /* Conteneur pour les liens du menu si tu veux encore mieux contrôler */
