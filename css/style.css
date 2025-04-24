@@ -383,15 +383,18 @@ input, textarea, select, button {
     font-size: 0.95rem;
   }
 }
-.davinci-header-container .main-container .main-content {
-    position: fixed;  /* Pour rendre l'élément fixe */
-    top: 0;           /* Le placer tout en haut de la page */
-    left: 0;          /* Pour s'assurer qu'il s'aligne à gauche */
-    width: 100%;      /* S'étend sur toute la largeur de la page */
-    height: 90px;     /* Maintenir la hauteur de l'élément */
-    z-index: 1000;    /* Assurer que l'élément reste au-dessus des autres éléments */
-    display: flex;
-    justify-content: space-between; /* Espacement entre les éléments enfants */
-    align-items: center; /* Centrer les éléments sur l'axe vertical */
-    margin: 0 auto;   /* Centrer l'élément horizontalement */
+/* Cible uniquement l'élément qui contient l'en-tête */
+.davinci-header-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Optionnel : ajoute une marge pour le contenu qui sera en dessous de l'en-tête fixe */
+body {
+    padding-top: 100px; /* Ajuste selon la hauteur de ton en-tête */
 }
