@@ -396,5 +396,5 @@ input, textarea, select, button {
 
 /* Optionnel : ajoute une marge pour le contenu qui sera en dessous de l'en-tête fixe */
 body {
-    padding-top: 150px; /* Ajuste selon la hauteur de ton en-tête */
+    padding-top: 200px; /* Ajuste selon la hauteur de ton en-tête */
 }
