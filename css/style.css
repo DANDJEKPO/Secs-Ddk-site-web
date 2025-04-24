@@ -29,6 +29,7 @@ header {
 nav ul {
   display: flex; /* Aligne les éléments en ligne */
   flex-direction: row; /* Aligne les éléments de gauche à droite */
+  list-style: none;
   margin: 0;
   padding: 0;
   gap: 80px; /* Ajoute de l'espace entre les éléments */
