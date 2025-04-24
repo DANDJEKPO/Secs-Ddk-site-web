@@ -383,3 +383,15 @@ input, textarea, select, button {
     font-size: 0.95rem;
   }
 }
+.davinci-header-container .main-container .main-content {
+    position: fixed;  /* Pour rendre l'élément fixe */
+    top: 0;           /* Le placer tout en haut de la page */
+    left: 0;          /* Pour s'assurer qu'il s'aligne à gauche */
+    width: 100%;      /* S'étend sur toute la largeur de la page */
+    height: 90px;     /* Maintenir la hauteur de l'élément */
+    z-index: 1000;    /* Assurer que l'élément reste au-dessus des autres éléments */
+    display: flex;
+    justify-content: space-between; /* Espacement entre les éléments enfants */
+    align-items: center; /* Centrer les éléments sur l'axe vertical */
+    margin: 0 auto;   /* Centrer l'élément horizontalement */
+}
