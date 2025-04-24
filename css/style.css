@@ -29,11 +29,9 @@ header {
 nav ul {
   display: flex; /* Aligne les éléments en ligne */
   flex-direction: row; /* Aligne les éléments de gauche à droite */
-  justify-content: flex-start; /* Aligne les éléments sur la gauche */
-  list-style: none; /* Enlève les puces par défaut */
   margin: 0;
   padding: 0;
-  gap: 50px; /* Ajoute de l'espace entre les éléments */
+  gap: 80px; /* Ajoute de l'espace entre les éléments */
 }
 
 nav ul li a {
