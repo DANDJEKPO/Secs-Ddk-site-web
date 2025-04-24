@@ -25,14 +25,15 @@ header {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+/* Style pour la navigation */
 nav ul {
-  display: flex;
-  flex-direction: row-reverse; /* ← ← ← C'est ça qui fait droite vers gauche */
-  justify-content: flex-start;
-  list-style: none;
+  display: flex; /* Utilise Flexbox pour aligner les éléments en ligne */
+  flex-direction: row; /* Aligne les éléments de gauche à droite */
+  justify-content: space-between; /* Distribue l'espace entre les éléments */
+  list-style: none; /* Enlève les puces */
   margin: 0;
   padding: 0;
-  gap: 30px; /* Espace entre les liens */
+  width: 100%; /* L'élément prend toute la largeur disponible */
 }
 
 nav ul li a {
