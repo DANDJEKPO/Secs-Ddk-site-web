@@ -33,7 +33,7 @@ nav ul {
   margin: 0;
   padding: 0;
   gap: 80px; /* Ajoute de l'espace entre les éléments */
-  background-color: #333; /* 🎯 Cette ligne applique la couleur de fond de la barre */
+  background-color: #0099ff; /* 🎯 Cette ligne applique la couleur de fond de la barre */
   /* D'autres styles : padding, display, etc. */
 }
 
