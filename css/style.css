@@ -27,13 +27,14 @@ header {
 
 /* Style pour la navigation */
 nav ul {
+  width: 100%;/* Prend toute la largeur de l'écran */
   display: flex; /* Aligne les éléments en ligne */
   flex-direction: row; /* Aligne les éléments de gauche à droite */
   list-style: none;
   margin: 0;
   padding: 0;
   gap: 80px; /* Ajoute de l'espace entre les éléments */
-  background-color: #0099ff; /* 🎯 Cette ligne applique la couleur de fond de la barre */
+  background-color:#0099ff; /* 🎯 Cette ligne applique la couleur de fond de la barre */
   /* D'autres styles : padding, display, etc. */
 }
 
