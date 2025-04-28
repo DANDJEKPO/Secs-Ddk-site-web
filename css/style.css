@@ -451,3 +451,39 @@ body {
     white-space: nowrap; /* Evite que les éléments du menu soient coupés ou passent à la ligne */
   }
 }
+/* Menu Hamburger */
+.menu-toggle {
+  display: none; /* Masqué par défaut */
+  flex-direction: column;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  z-index: 9999; /* Assure que le bouton soit au-dessus */
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: #333; /* Couleur des barres */
+  margin: 4px 0;
+  transition: all 0.3s ease;
+}
+
+/* Affichage du bouton sur mobile */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: flex; /* Affiche le bouton sur mobile */
+  }
+
+  nav ul {
+    display: none; /* Masque le menu sur mobile */
+    flex-direction: column; /* Les éléments du menu se placent en colonne */
+    gap: 20px; /* Espace entre les éléments du menu */
+    width: 100%; /* Assure que le menu occupe toute la largeur */
+  }
+
+  nav.active ul {
+    display: flex; /* Affiche le menu quand activé */
+  }
+}
