@@ -378,5 +378,14 @@ i_agree_checkbox.run({"palette":"light","terms_and_conditions_url":"","privacy_p
     }
   };
 </script>
+    <script>
+  const menuToggle = document.querySelector('.menu-toggle');
+  const nav = document.querySelector('nav');
+
+  menuToggle.addEventListener('click', () => {
+    nav.classList.toggle('active');
+  });
+</script>
+
 </body>
 </html>
