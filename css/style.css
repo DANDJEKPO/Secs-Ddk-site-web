@@ -1,198 +1,107 @@
-/* Global Styles */
-* {
+/* Style global */
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
 }
 
-body {
-    background-color: #f4f7fc; /* Fond clair pour contraster avec le bleu-vert */
-    color: #333;
-    line-height: 1.6;
+/* Structure de la barre de navigation */
+nav {
+    background-color: #1e7c7c;
+    padding: 15px;
 }
 
-a {
-    text-decoration: none;
-    color: inherit;
-    transition: color 0.3s ease;
-}
-
-/* Header Styles */
-header {
-  background-color: #006f5f;
-  padding: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-/* Style pour la navigation */
 nav ul {
-  width: 100%;/* Prend toute la largeur de l'écran */
-  display: flex; /* Aligne les éléments en ligne */
-  flex-direction: row; /* Aligne les éléments de gauche à droite */
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  gap: 80px; /* Ajoute de l'espace entre les éléments */
-  background-color:#0099ff; /* 🎯 Cette ligne applique la couleur de fond de la barre */
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    font-size: 18px;
 }
 
 nav ul li a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 18px;
-}
-
-/* Menu principal en pleine largeur */
-.menu {
-  display: flex;
-  flex-direction: row-reverse; /* Aligne de droite à gauche */
-  justify-content: flex-start; /* Aligne les éléments à droite */
-  gap: 20px;
-  background-color: #009688;
-  padding: 15px 30px;
-}
-
-.menu a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-/* Conteneur pour les liens du menu si tu veux encore mieux contrôler */
-nav .menu-links {
-  display: flex;
-  gap: 10px; /* Espace entre les liens */
-}
-
-/* Liens du menu */
-nav a {
-  color: #ffffff;
-  text-decoration: none;
-  padding: 10px 15px;
-  font-weight: bold;
-  transition: background 0.3s ease;
-}
-
-/* Effet au survol */
-nav a:hover {
-  background-color: #00796b; /* Vert plus foncé au survol */
-  border-radius: 4px;
-}
-
-/* Hero Section */
-.hero {
-    background-image: url(https://raw.githubusercontent.com/DANDJEKPO/Secs-Ddk-site-web/refs/heads/main/3.jpg); /* Remplacer par une image propre */
-    background-size: cover;
-    background-position: center;
     color: white;
-    height: 15vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    text-decoration: none;
+    padding: 10px;
+}
+
+nav ul li a:hover {
+    background-color: #00796b;
+}
+
+/* Menu Hamburger pour petits écrans */
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #1e7c7c;
+        padding: 10px 0;
+    }
+
+    nav ul.show {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: block;
+        cursor: pointer;
+        font-size: 30px;
+        color: white;
+        padding: 10px;
+    }
+
+    .menu-toggle:hover {
+        background-color: #00796b;
+    }
+
+    .menu {
+        display: none;
+    }
+}
+
+/* Section Hero */
+.hero {
+    height: 70vh;
+    background: url('path_to_image.jpg') no-repeat center center/cover;
+    color: white;
     text-align: center;
-    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+    padding: 50px 20px;
 }
 
 .hero h2 {
     font-size: 48px;
-    font-weight: 700;
-    letter-spacing: 1px;
-    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
     margin-bottom: 20px;
 }
 
 .hero p {
-    font-size: 22px;
-    letter-spacing: 1px;
-    margin-bottom: 30px;
+    font-size: 24px;
 }
 
 .hero .cta-button {
     padding: 15px 30px;
-    font-size: 18px;
-    background-color: #006f5f; /* Bleu-vert sombre */
+    background-color: #00796b;
     color: white;
-    border: none;
-    border-radius: 30px;
-    text-transform: uppercase;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+    text-decoration: none;
+    border-radius: 5px;
 }
 
 .hero .cta-button:hover {
-    background-color: #00796b; /* Bleu-vert plus foncé au survol */
+    background-color: #004d40;
 }
 
-/* Section Styles */
-section {
-    padding: 60px 20px;
-    text-align: center;
-}
-
-section h2 {
-    font-size: 36px;
-    font-weight: 600;
-    color: #006f5f; /* Bleu-vert sombre */
-    margin-bottom: 30px;
-    letter-spacing: 1px;
-}
-
-section p {
-    font-size: 18px;
-    line-height: 1.8;
-    color: #666;
-    margin-bottom: 40px;
-}
-
-/* Card Layout for Content */
-.cards-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 20px;
-    padding: 20px;
-}
-
-.card {
-    background-color: #fff;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
-}
-
-.card h3 {
-    font-size: 24px;
-    margin-bottom: 15px;
-    color: #006f5f; /* Bleu-vert sombre */
-}
-
-.card p {
-    font-size: 16px;
-    color: #666;
-}
-
-/* Footer Styles */
-footer {
-    background-color: #006f5f; /* Bleu-vert très sombre */
-    color: white;
-    padding: 20px 0;
-    text-align: center;
-    font-size: 14px;
-}
-
-footer p {
-    margin-top: 10px;
-}
-
-/* Responsive Design */
+/* Ajustements pour les petits écrans */
 @media (max-width: 768px) {
+    .hero {
+        height: 50vh;
+    }
+
     .hero h2 {
         font-size: 36px;
     }
@@ -205,74 +114,103 @@ footer p {
         padding: 12px 25px;
         font-size: 16px;
     }
+}
 
-    section h2 {
-        font-size: 28px;
-    }
+/* Cartes de contenu */
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 40px;
+}
 
-    section p {
-        font-size: 16px;
-    }
+.card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
 
+.card h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 16px;
+}
+
+/* Ajustements pour les petits écrans */
+@media (max-width: 768px) {
     .cards-container {
         grid-template-columns: 1fr;
+        padding: 20px;
     }
 
-    nav ul {
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-        background-color: #0099ff;
-        padding: 10px 0;
-    }
-
-    nav ul.show {
-        display: block;
+    .card {
+        padding: 20px;
     }
 }
 
-@media (max-width: 480px) {
-    .hero {
-        height: 60vh;
+/* Footer */
+footer {
+    background-color: #1e7c7c;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer p {
+    font-size: 16px;
+}
+
+/* Footer pour petits écrans */
+@media (max-width: 768px) {
+    footer {
+        padding: 15px;
     }
 
-    .hero h2 {
-        font-size: 28px;
-    }
-
-    .hero p {
-        font-size: 16px;
-    }
-
-    .menu-toggle {
-        display: block;
-    }
-
-    .menu {
-        display: none;
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .menu.show {
-        display: flex;
+    footer p {
+        font-size: 14px;
     }
 }
 
-/* Rotation de l'icône */
-@keyframes rotate {
-    0% {
-        transform: rotate(0deg);
+/* Texte adaptatif */
+@media (max-width: 768px) {
+    h1, h2 {
+        font-size: 1.4rem;
     }
-    100% {
-        transform: rotate(360deg);
+
+    p {
+        font-size: 1rem;
+    }
+
+    .card h3 {
+        font-size: 20px;
+    }
+
+    .card p {
+        font-size: 14px;
     }
 }
 
-.rotate {
-    font-size: 30px;
-    display: inline-block;
-    animation: rotate 2s infinite linear;
+/* Réduire le padding et la largeur du body pour les petits écrans */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    .container {
+        padding: 10px;
+        width: 100%;
+    }
+}
+
+/* Réinitialisation du style des éléments de base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 
