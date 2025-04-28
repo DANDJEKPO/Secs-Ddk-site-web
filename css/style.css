@@ -1,107 +1,203 @@
-/* Style global */
-body {
-    font-family: Arial, sans-serif;
+
+/* Global Styles */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #f4f4f4;
+    font-family: 'Arial', sans-serif;
 }
 
-/* Structure de la barre de navigation */
-nav {
-    background-color: #1e7c7c;
-    padding: 15px;
+body {
+    background-color: #f4f7fc; /* Fond clair pour contraster avec le bleu-vert */
+    color: #333;
+    line-height: 1.6;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s ease;
+}
+
+/* Header Styles */
+header {
+  background-color: #006f5f;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Style pour la navigation */
 nav ul {
-    display: flex;
-    justify-content: space-around;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-nav ul li {
-    font-size: 18px;
+  width: 100%;/* Prend toute la largeur de l'écran */
+  display: flex; /* Aligne les éléments en ligne */
+  flex-direction: row; /* Aligne les éléments de gauche à droite */
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 80px; /* Ajoute de l'espace entre les éléments */
+  background-color:#0099ff; /* 🎯 Cette ligne applique la couleur de fond de la barre */
+  /* D'autres styles : padding, display, etc. */
 }
 
 nav ul li a {
-    color: white;
-    text-decoration: none;
-    padding: 10px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
 }
 
-nav ul li a:hover {
-    background-color: #00796b;
+
+
+/* Menu principal en pleine largeur */
+.menu {
+  display: flex;
+  flex-direction: row-reverse; /* Aligne de droite à gauche */
+  justify-content: flex-start; /* Aligne les éléments à droite */
+  gap: 20px;
+  background-color: #009688;
+  padding: 15px 30px;
 }
 
-/* Menu Hamburger pour petits écrans */
-@media (max-width: 768px) {
-    nav ul {
-        display: none;
-        flex-direction: column;
-        width: 100%;
-        background-color: #1e7c7c;
-        padding: 10px 0;
-    }
-
-    nav ul.show {
-        display: flex;
-    }
-
-    .menu-toggle {
-        display: block;
-        cursor: pointer;
-        font-size: 30px;
-        color: white;
-        padding: 10px;
-    }
-
-    .menu-toggle:hover {
-        background-color: #00796b;
-    }
-
-    .menu {
-        display: none;
-    }
+.menu a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
 }
 
-/* Section Hero */
+/* Conteneur pour les liens du menu si tu veux encore mieux contrôler */
+nav .menu-links {
+  display: flex;
+  gap: 10px; /* Espace entre les liens */
+}
+
+/* Liens du menu */
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 10px 15px;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+/* Effet au survol */
+nav a:hover {
+  background-color: #00796b; /* Vert plus foncé au survol */
+  border-radius: 4px;
+}
+
+
+/* Hero Section */
 .hero {
-    height: 70vh;
-    background: url('path_to_image.jpg') no-repeat center center/cover;
+    background-image: url(https://raw.githubusercontent.com/DANDJEKPO/Secs-Ddk-site-web/refs/heads/main/3.jpg); /* Remplacer par une image propre */
+    background-size: cover;
+    background-position: center;
     color: white;
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    padding: 50px 20px;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 .hero h2 {
     font-size: 48px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
     margin-bottom: 20px;
 }
 
 .hero p {
-    font-size: 24px;
+    font-size: 22px;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
 }
 
 .hero .cta-button {
     padding: 15px 30px;
-    background-color: #00796b;
+    font-size: 18px;
+    background-color: #006f5f; /* Bleu-vert sombre */
     color: white;
-    text-decoration: none;
-    border-radius: 5px;
+    border: none;
+    border-radius: 30px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
 .hero .cta-button:hover {
-    background-color: #004d40;
+    background-color: #00796b; /* Bleu-vert plus foncé au survol */
 }
 
-/* Ajustements pour les petits écrans */
-@media (max-width: 768px) {
-    .hero {
-        height: 50vh;
-    }
+/* Section Styles */
+section {
+    padding: 60px 20px;
+    text-align: center;
+}
 
+section h2 {
+    font-size: 36px;
+    font-weight: 600;
+    color: #006f5f; /* Bleu-vert sombre */
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+section p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+/* Card Layout for Content */
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.card h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #006f5f; /* Bleu-vert sombre */
+}
+
+.card p {
+    font-size: 16px;
+    color: #666;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #006f5f; /* Bleu-vert très sombre */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 14px;
+}
+
+footer p {
+    margin-top: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
     .hero h2 {
         font-size: 36px;
     }
@@ -114,103 +210,344 @@ nav ul li a:hover {
         padding: 12px 25px;
         font-size: 16px;
     }
-}
 
-/* Cartes de contenu */
-.cards-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    padding: 40px;
-}
+    section h2 {
+        font-size: 28px;
+    }
 
-.card {
-    background-color: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
+    section p {
+        font-size: 16px;
+    }
 
-.card h3 {
-    font-size: 24px;
-    margin-bottom: 10px;
-}
-
-.card p {
-    font-size: 16px;
-}
-
-/* Ajustements pour les petits écrans */
-@media (max-width: 768px) {
     .cards-container {
         grid-template-columns: 1fr;
-        padding: 20px;
-    }
-
-    .card {
-        padding: 20px;
     }
 }
 
-/* Footer */
-footer {
+@media (max-width: 480px) {
+    .hero {
+        height: 60vh;
+    }
+
+    .hero h2 {
+        font-size: 28px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+}
+
+/* Animation du texte qui clignote */
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.blink {
+    animation: blink 2s step-start infinite;
+    
+}
+
+/* Conteneur pour faire défiler le texte */
+.scroll-text-wrapper {
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+/* Animation du texte qui défile de manière fluide */
+@keyframes scrollText {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.scroll-text {
+    display: inline-block;
+    white-space: nowrap;
+    animation: scrollText 20s linear infinite;
+}
+
+/* Rotation de l'icône */
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.rotate {
+    font-size: 30px;
+    display: inline-block;
+    animation: rotate 2s infinite linear;
+}
+.header-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px; /* Réduit l'espacement pour éviter le débordement */
+    padding: 0 20px; /* Ajoute un peu de padding horizontal */
+}
+
+.logo img {
+    height: 110px;
+    width: auto;
+}
+html, body {
+    overflow-x: hidden;
+    width: 100%;
+}
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* HEADER */
+header {
+  background-color: #1e7c7c; /* Bleu-vert */
+  color: #fff;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+/* IMAGES */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* FORMS */
+input, textarea, select, button {
+  width: 50%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  nav ul {
+    display: none;
+    flex-direction: column;
+    width: 100%;
     background-color: #1e7c7c;
-    color: white;
-    text-align: center;
+    padding: 10px 0;
+  }
+
+  nav ul.show {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  main h1 {
+    font-size: 1.4rem;
+  }
+.notre-discipline {
+  padding: 40px 20px;
+  background-color: #f0f9f8;
+  text-align: center;
+}
+
+.notre-discipline h2 {
+  color: #00796b;
+  margin-bottom: 30px;
+  font-size: 28px;
+}
+
+.discipline-galerie {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.discipline-item {
+  max-width: 300px;
+}
+
+.discipline-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.discipline-item p {
+  margin-top: 10px;
+  color: #333;
+  font-size: 16px;
+}
+
+  main p, main li {
+    font-size: 0.95rem;
+  }
+}
+/* Cible uniquement l'élément qui contient l'en-tête */
+.davinci-header-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Optionnel : ajoute une marge pour le contenu qui sera en dessous de l'en-tête fixe */
+body {
+    padding-top: 300px; /* Ajuste selon la hauteur de ton en-tête */
+}
+/* Style général du corps de la page */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Exemple de style de container principal */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
     padding: 20px;
 }
 
-footer p {
-    font-size: 16px;
+/* En-tête */
+header {
+    background-color: #1e293b;
+    color: white;
+    padding: 15px;
+    text-align: center;
 }
 
-/* Footer pour petits écrans */
-@media (max-width: 768px) {
-    footer {
-        padding: 15px;
-    }
-
-    footer p {
-        font-size: 14px;
-    }
+/* Exemple de section */
+section {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
 }
 
-/* Texte adaptatif */
+/* Médias queries pour les appareils mobiles */
 @media (max-width: 768px) {
-    h1, h2 {
-        font-size: 1.4rem;
-    }
-
-    p {
-        font-size: 1rem;
-    }
-
-    .card h3 {
-        font-size: 20px;
-    }
-
-    .card p {
-        font-size: 14px;
-    }
-}
-
-/* Réduire le padding et la largeur du body pour les petits écrans */
-@media (max-width: 768px) {
-    body {
+    /* Pour les tablettes et smartphones en mode paysage */
+    header {
         padding: 10px;
     }
 
     .container {
         padding: 10px;
-        width: 100%;
+    }
+
+    section {
+        padding: 10px;
+    }
+
+    h1, h2 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 1rem;
     }
 }
 
-/* Réinitialisation du style des éléments de base */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/* Médias queries pour les smartphones (moins de 480px) */
+@media (max-width: 480px) {
+    header {
+        padding: 8px;
+    }
+
+    .container {
+        padding: 5px;
+    }
+
+    section {
+        padding: 5px;
+    }
+
+    h1 {
+        font-size: 1.2rem;
+    }
+
+    h2 {
+        font-size: 1rem;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+
+    button {
+        width: 100%;
+        padding: 12px;
+        font-size: 1.1rem;
+    }
+}
+
+/* Médias queries pour les écrans plus grands (ordinateurs de bureau, tablettes larges) */
+@media (min-width: 1200px) {
+    header {
+        padding: 20px;
+    }
+
+    .container {
+        padding: 20px;
+    }
+
+    section {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 1.1rem;
+    }
+}
+
+/* Exemple de style pour les images afin qu'elles soient responsives */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Style du bouton */
+button {
+    background-color: #1e293b;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #3b4b6f;
 }
 
 
