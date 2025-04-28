@@ -34,7 +34,7 @@ nav ul {
   list-style: none;
   margin: 0;
   padding: 0;
-  gap: 80px; /* Ajoute de l'espace entre les éléments */
+  gap: 30px; /* Ajoute de l'espace entre les éléments */
   background-color:#0099ff; /* 🎯 Cette ligne applique la couleur de fond de la barre */
   /* D'autres styles : padding, display, etc. */
 }
