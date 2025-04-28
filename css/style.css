@@ -293,7 +293,7 @@ footer p {
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    gap: 10px; /* Réduit l'espacement pour éviter le débordement */
+    gap: 100px; /* Réduit l'espacement pour éviter le débordement */
     padding: 0 10px; /* Ajoute un peu de padding horizontal */
 }
 
@@ -427,4 +427,27 @@ body {
     padding-top: 300px; /* Ajuste selon la hauteur de ton en-tête */
 }
 
+@media (max-width: 480px) {
+  .header-container {
+    gap: 5px; /* Réduit l'espace entre les éléments */
+    padding: 0 5px; /* Moins de padding */
+  }
 
+  .logo img {
+    height: 45px; /* Réduit légèrement le logo */
+  }
+
+  nav ul {
+    display: flex; /* Les éléments sont en ligne */
+    flex-direction: row; /* Reste horizontal sur mobile */
+    justify-content: center; /* Centrage horizontal */
+    align-items: center; /* Centrage vertical */
+    gap: 10px; /* Espacement entre les éléments */
+    flex-wrap: wrap; /* Permet aux éléments de se réorganiser sur plusieurs lignes si nécessaire */
+  }
+
+  nav ul li {
+    margin: 0;
+    white-space: nowrap; /* Evite que les éléments du menu soient coupés ou passent à la ligne */
+  }
+}
