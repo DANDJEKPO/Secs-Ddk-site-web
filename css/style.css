@@ -1,4 +1,3 @@
-
 /* Global Styles */
 * {
     margin: 0;
@@ -21,78 +20,64 @@ a {
 
 /* Header Styles */
 header {
-  background-color: #006f5f;
-  padding: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #006f5f;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* Style pour la navigation */
 nav ul {
-  width: 100%;/* Prend toute la largeur de l'écran */
-  display: flex; /* Aligne les éléments en ligne */
-  flex-direction: row; /* Aligne les éléments de gauche à droite */
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  gap: 150px; /* Ajoute de l'espace entre les éléments */
-  background-color:#0099ff; /* 🎯 Cette ligne applique la couleur de fond de la barre */
-  /* D'autres styles : padding, display, etc. */
+    display: flex;
+    gap: 20px;
+    background-color: #0099ff;
+    list-style: none;
+    padding: 0;
+    justify-content: center; /* Centrer les éléments */
 }
 
 nav ul li a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 18px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
 }
 
-
-
-/* Menu principal en pleine largeur */
+/* Menu principal */
 .menu {
-  display: flex;
-  flex-direction: row-reverse; /* Aligne de droite à gauche */
-  justify-content: flex-start; /* Aligne les éléments à droite */
-  gap: 20px;
-  background-color: #009688;
-  padding: 15px 30px;
+    display: flex;
+    gap: 20px;
+    background-color: #009688;
+    padding: 15px 30px;
 }
 
 .menu a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-/* Conteneur pour les liens du menu si tu veux encore mieux contrôler */
-nav .menu-links {
-  display: flex;
-  gap: 5px; /* Espace entre les liens */
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
 }
 
 /* Liens du menu */
 nav a {
-  color: #ffffff;
-  text-decoration: none;
-  padding: 10px 15px;
-  font-weight: bold;
-  transition: background 0.3s ease;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-weight: bold;
+    transition: background 0.3s ease;
 }
 
 /* Effet au survol */
 nav a:hover {
-  background-color: #00796b; /* Vert plus foncé au survol */
-  border-radius: 4px;
+    background-color: #00796b;
+    border-radius: 4px;
 }
-
 
 /* Hero Section */
 .hero {
-    background-image: url(https://raw.githubusercontent.com/DANDJEKPO/Secs-Ddk-site-web/refs/heads/main/3.jpg); /* Remplacer par une image propre */
+    background-image: url(https://raw.githubusercontent.com/DANDJEKPO/Secs-Ddk-site-web/refs/heads/main/3.jpg);
     background-size: cover;
     background-position: center;
     color: white;
-    height: 15vh;
+    height: 50vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -117,7 +102,7 @@ nav a:hover {
 .hero .cta-button {
     padding: 15px 30px;
     font-size: 18px;
-    background-color: #006f5f; /* Bleu-vert sombre */
+    background-color: #006f5f;
     color: white;
     border: none;
     border-radius: 30px;
@@ -127,7 +112,7 @@ nav a:hover {
 }
 
 .hero .cta-button:hover {
-    background-color: #00796b; /* Bleu-vert plus foncé au survol */
+    background-color: #00796b;
 }
 
 /* Section Styles */
@@ -139,7 +124,7 @@ section {
 section h2 {
     font-size: 36px;
     font-weight: 300;
-    color: #006f5f; /* Bleu-vert sombre */
+    color: #006f5f;
     margin-bottom: 30px;
     letter-spacing: 1px;
 }
@@ -175,7 +160,7 @@ section p {
 .card h3 {
     font-size: 24px;
     margin-bottom: 15px;
-    color: #006f5f; /* Bleu-vert sombre */
+    color: #006f5f;
 }
 
 .card p {
@@ -185,7 +170,7 @@ section p {
 
 /* Footer Styles */
 footer {
-    background-color: #006f5f; /* Bleu-vert très sombre */
+    background-color: #006f5f;
     color: white;
     padding: 20px 0;
     text-align: center;
@@ -197,17 +182,16 @@ footer p {
 }
 
 /* Responsive Design */
-@media (max-width: 300px) {
+@media (max-width: 768px) {
+    .hero {
+        height: 60vh;
+    }
+
     .hero h2 {
-        font-size: 36px;
+        font-size: 28px;
     }
 
     .hero p {
-        font-size: 18px;
-    }
-
-    .hero .cta-button {
-        padding: 12px 25px;
         font-size: 16px;
     }
 
@@ -222,19 +206,10 @@ footer p {
     .cards-container {
         grid-template-columns: 1fr;
     }
-}
 
-@media (max-width: 480px) {
-    .hero {
-        height: 60vh;
-    }
-
-    .hero h2 {
-        font-size: 28px;
-    }
-
-    .hero p {
-        font-size: 16px;
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
     }
 }
 
@@ -247,7 +222,6 @@ footer p {
 
 .blink {
     animation: blink 2s step-start infinite;
-    
 }
 
 /* Conteneur pour faire défiler le texte */
@@ -288,126 +262,58 @@ footer p {
     display: inline-block;
     animation: rotate 2s infinite linear;
 }
-.header-container {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-    gap: 100px; /* Réduit l'espacement pour éviter le débordement */
-    padding: 0 10px; /* Ajoute un peu de padding horizontal */
-}
 
-.logo img {
-    height: 60px;
-    width: auto;
-}
-html, body {
-    overflow-x: hidden;
-    width: 100%;
-}
-/* Reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* HEADER */
-header {
-  background-color: #1e7c7c;
-  color: #fff;
-  padding: 2px 5px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  width: 100%;
-}
-
-/* Ajustement automatique pour mobiles */
-@media (max-width: 768px) {
-  header {
-    padding: 2px 5px;
-  }
-}
-
-
-/* IMAGES */
-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-}
-
-/* FORMS */
-input, textarea, select, button {
-  width: 50%;
-  padding: 10px;
-  margin-bottom: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-/* RESPONSIVE */
-@media (max-width: 300px) {
-  nav ul {
+/* Menu Hamburger */
+.menu-toggle {
     display: none;
     flex-direction: column;
-    width: 100%;
-    background-color: #1e7c7c;
-    padding: 10px 0;
-  }
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 9999;
+}
 
-  nav ul.show {
-    display: flex;
-  }
+.bar {
+    width: 25px;
+    height: 5px;
+    background-color: #ccc;
+    margin: 4px 0;
+    transition: all 0.3s ease;
+}
 
-  .menu-toggle {
+/* Affichage du bouton sur mobile */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: flex;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    nav.active ul {
+        display: flex;
+    }
+}
+
+/* Ajustements pour les images et formulaires */
+img {
+    max-width: 100%;
+    height: auto;
     display: block;
-  }
-
-  main h1 {
-    font-size: 1.4rem;
-  }
-.notre-discipline {
-  padding: 40px 20px;
-  background-color: #f0f9f8;
-  text-align: center;
 }
 
-.notre-discipline h2 {
-  color: #00796b;
-  margin-bottom: 30px;
-  font-size: 28px;
+input, textarea, select, button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
-.discipline-galerie {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 30px;
-}
-
-.discipline-item {
-  max-width: 200px;
-}
-
-.discipline-item img {
-  width: 100%;
-  height: auto;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-.discipline-item p {
-  margin-top: 10px;
-  color: #333;
-  font-size: 16px;
-}
-
-  main p, main li {
-    font-size: 0.95rem;
-  }
-}
 /* Cible uniquement l'élément qui contient l'en-tête */
 .davinci-header-container {
     position: fixed;
@@ -416,45 +322,21 @@ input, textarea, select, button {
     background-color: white;
     z-index: 500;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-      margin: 0;        /* Supprime toute marge extérieure */
-    padding: 0;       /* Supprime tout padding interne */
-    height: 30px;     /* Définir une hauteur spécifique pour l'en-tête */
 }
 
+/* Responsive for smaller screens */
+@media (max-width: 480px) {
+    .hero {
+        height: 50vh;
+    }
+    
+    .header-container {
+        flex-direction: column;
+        align-items: center;
+    }
 
-/* Menu Hamburger */
-.menu-toggle {
-  display: none; /* Masqué par défaut */
-  flex-direction: column;
-  background: transparent;
-  border: none;
-  cursor: pointer;
-  padding: 10px;
-  z-index: 9999; /* Assure que le bouton soit au-dessus */
+    .logo img {
+        height: 50px;
+    }
 }
 
-.bar {
-  width: 25px;
-  height: 5px;
-  background-color: #ccc; /* Couleur des barres */
-  margin: 4px 0;
-  transition: all 0.3s ease;
-}
-
-/* Affichage du bouton sur mobile */
-@media (max-width: 768px) {
-  .menu-toggle {
-    display: flex; /* Affiche le bouton sur mobile */
-  }
-
-  nav ul {
-    display: none; /* Masque le menu sur mobile */
-    flex-direction: column; /* Les éléments du menu se placent en colonne */
-    gap: 10px; /* Espace entre les éléments du menu */
-    width: 100%; /* Assure que le menu occupe toute la largeur */
-  }
-
-  nav.active ul {
-    display: flex; /* Affiche le menu quand activé */
-  }
-}
