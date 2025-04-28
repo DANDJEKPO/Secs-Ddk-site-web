@@ -414,3 +414,137 @@ input, textarea, select, button {
 body {
     padding-top: 300px; /* Ajuste selon la hauteur de ton en-tête */
 }
+/* Style général du corps de la page */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Exemple de style de container principal */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* En-tête */
+header {
+    background-color: #1e293b;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+/* Exemple de section */
+section {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+/* Médias queries pour les appareils mobiles */
+@media (max-width: 768px) {
+    /* Pour les tablettes et smartphones en mode paysage */
+    header {
+        padding: 10px;
+    }
+
+    .container {
+        padding: 10px;
+    }
+
+    section {
+        padding: 10px;
+    }
+
+    h1, h2 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+}
+
+/* Médias queries pour les smartphones (moins de 480px) */
+@media (max-width: 480px) {
+    header {
+        padding: 8px;
+    }
+
+    .container {
+        padding: 5px;
+    }
+
+    section {
+        padding: 5px;
+    }
+
+    h1 {
+        font-size: 1.2rem;
+    }
+
+    h2 {
+        font-size: 1rem;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+
+    button {
+        width: 100%;
+        padding: 12px;
+        font-size: 1.1rem;
+    }
+}
+
+/* Médias queries pour les écrans plus grands (ordinateurs de bureau, tablettes larges) */
+@media (min-width: 1200px) {
+    header {
+        padding: 20px;
+    }
+
+    .container {
+        padding: 20px;
+    }
+
+    section {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 1.1rem;
+    }
+}
+
+/* Exemple de style pour les images afin qu'elles soient responsives */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Style du bouton */
+button {
+    background-color: #1e293b;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #3b4b6f;
+}
