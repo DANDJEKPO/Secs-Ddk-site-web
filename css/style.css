@@ -67,7 +67,7 @@ nav ul li a {
 /* Conteneur pour les liens du menu si tu veux encore mieux contrôler */
 nav .menu-links {
   display: flex;
-  gap: 10px; /* Espace entre les liens */
+  gap: 5px; /* Espace entre les liens */
 }
 
 /* Liens du menu */
@@ -102,7 +102,7 @@ nav a:hover {
 
 .hero h2 {
     font-size: 48px;
-    font-weight: 700;
+    font-weight: 300;
     letter-spacing: 1px;
     text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
     margin-bottom: 20px;
@@ -138,7 +138,7 @@ section {
 
 section h2 {
     font-size: 36px;
-    font-weight: 600;
+    font-weight: 300;
     color: #006f5f; /* Bleu-vert sombre */
     margin-bottom: 30px;
     letter-spacing: 1px;
@@ -197,7 +197,7 @@ footer p {
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
+@media (max-width: 300px) {
     .hero h2 {
         font-size: 36px;
     }
@@ -293,8 +293,8 @@ footer p {
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    gap: 20px; /* Réduit l'espacement pour éviter le débordement */
-    padding: 0 20px; /* Ajoute un peu de padding horizontal */
+    gap: 10px; /* Réduit l'espacement pour éviter le débordement */
+    padding: 0 10px; /* Ajoute un peu de padding horizontal */
 }
 
 .logo img {
@@ -406,13 +406,13 @@ input, textarea, select, button {
     top: 0;
     width: 100%;
     background-color: white;
-    z-index: 500;
+    z-index: 100;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 /* Optionnel : ajoute une marge pour le contenu qui sera en dessous de l'en-tête fixe */
 body {
-    padding-top: 300px; /* Ajuste selon la hauteur de ton en-tête */
+    padding-top: 50px; /* Ajuste selon la hauteur de ton en-tête */
 }
 
 
