@@ -442,8 +442,8 @@ body {
     flex-direction: row; /* Reste horizontal sur mobile */
     justify-content: center; /* Centrage horizontal */
     align-items: center; /* Centrage vertical */
-    gap: 10px; /* Espacement entre les éléments */
-    flex-wrap: wrap; /* Permet aux éléments de se réorganiser sur plusieurs lignes si nécessaire */
+    gap: 3px; /* Espacement entre les éléments */
+    
   }
 
   nav ul li {
