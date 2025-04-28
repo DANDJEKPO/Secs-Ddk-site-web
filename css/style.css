@@ -406,13 +406,17 @@ input, textarea, select, button {
     top: 0;
     width: 100%;
     background-color: white;
-    z-index: 100;
+    z-index: 500;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      margin: 0;        /* Supprime toute marge extérieure */
+    padding: 0;       /* Supprime tout padding interne */
+    height: 30px;     /* Définir une hauteur spécifique pour l'en-tête */
 }
+
 
 /* Optionnel : ajoute une marge pour le contenu qui sera en dessous de l'en-tête fixe */
 body {
-    padding-top: 50px; /* Ajuste selon la hauteur de ton en-tête */
+    padding-top: 300px; /* Ajuste selon la hauteur de ton en-tête */
 }
 
 
