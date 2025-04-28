@@ -240,29 +240,124 @@ i_agree_checkbox.run({"palette":"light","terms_and_conditions_url":"","privacy_p
 </script>
 
     <script src="js/script.js"></script>
-<!-- POPUP BIENVENUE SECS DDK ELEVAGE -->
-<div id="welcomePopup" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.7); z-index:9999; justify-content:center; align-items:center;">
-  <div style="background:#fff; padding:30px; border-radius:12px; max-width:600px; text-align:left; box-shadow:0 10px 30px rgba(0,0,0,0.4); font-family:sans-serif;">
-    <h2 style="text-align:center; color:#1e293b;">Bienvenue sur le site officiel de SECS DDK ELEVAGE ! </h2>
-    <p>Bonjour et bienvenue sur notre plateforme !</p>
-    <p>Nous sommes ravis de vous accueillir dans l’univers de <strong>l’élevage moderne et intelligent</strong>. Ici, vous trouverez :</p>
-    <ul>
-      <li> Des <strong>formations professionnelles</strong> en élevage (lapins, porcs, volailles, poissons…)</li>
-      <li> Des <strong>conseils pratiques</strong> et des <strong>articles utiles</strong> pour réussir votre projet</li>
-      <li> Une <strong>boutique en ligne</strong> pour trouver vos animaux et équipements</li>
-      <li> Des <strong>services d’accompagnement</strong>, de plan d’affaires et de diagnostic vétérinaire</li>
-    </ul>
-    <p>🔔 <strong>N’oubliez pas de vous abonner à notre newsletter</strong> pour recevoir nos dernières publications !</p>
-    <p><strong>📞 Pour plus d’infos :</strong><br>
-      📧 <a href="mailto:dandjekpoabel03@gmail.com" style="color:#1e40af;">dandjekpoabel03@gmail.com</a><br>
-      📱 Moov : 0199648190 / MTN : 0154161300
-    </p>
-    <p style="text-align:center; font-weight:bold;"> Explorez, apprenez et réussissez avec SECS DDK ELEVAGE !</p>
-    <div style="text-align:center; margin-top:20px;">
-      <button onclick="closePopup()" style="padding:10px 20px; background:#1e293b; color:white; border:none; border-radius:5px; cursor:pointer;">Fermer</button>
+<style>
+        /* Style global du popup */
+        #welcomePopup {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            z-index: 9999;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #popupContent {
+            background: #fff;
+            padding: 30px;
+            border-radius: 12px;
+            max-width: 90%;
+            width: 600px;
+            text-align: left;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+            font-family: sans-serif;
+        }
+
+        h2 {
+            text-align: center;
+            color: #1e293b;
+        }
+
+        p, ul {
+            font-size: 1rem;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background: #1e293b;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #3b4b6f;
+        }
+
+        /* Médias queries pour l'adaptation aux écrans mobiles */
+        @media (max-width: 768px) {
+            #popupContent {
+                width: 90%;
+                padding: 20px;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+
+            p, ul {
+                font-size: 0.9rem;
+            }
+
+            button {
+                width: 100%;
+                padding: 12px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            #popupContent {
+                width: 95%;
+                padding: 15px;
+            }
+
+            h2 {
+                font-size: 1.2rem;
+            }
+
+            p, ul {
+                font-size: 0.85rem;
+            }
+
+            button {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- POPUP BIENVENUE SECS DDK ELEVAGE -->
+    <div id="welcomePopup">
+        <div id="popupContent">
+            <h2>Bienvenue sur le site officiel de SECS DDK ELEVAGE !</h2>
+            <p>Bonjour et bienvenue sur notre plateforme !</p>
+            <p>Nous sommes ravis de vous accueillir dans l’univers de <strong>l’élevage moderne et intelligent</strong>. Ici, vous trouverez :</p>
+            <ul>
+                <li>Des <strong>formations professionnelles</strong> en élevage (lapins, porcs, volailles, poissons…)</li>
+                <li>Des <strong>conseils pratiques</strong> et des <strong>articles utiles</strong> pour réussir votre projet</li>
+                <li>Une <strong>boutique en ligne</strong> pour trouver vos animaux et équipements</li>
+                <li>Des <strong>services d’accompagnement</strong>, de plan d’affaires et de diagnostic vétérinaire</li>
+            </ul>
+            <p>🔔 <strong>N’oubliez pas de vous abonner à notre newsletter</strong> pour recevoir nos dernières publications !</p>
+            <p><strong>📞 Pour plus d’infos :</strong><br>
+                📧 <a href="mailto:dandjekpoabel03@gmail.com" style="color:#1e40af;">dandjekpoabel03@gmail.com</a><br>
+                📱 Moov : 0199648190 / MTN : 0154161300
+            </p>
+            <p style="text-align:center; font-weight:bold;">Explorez, apprenez et réussissez avec SECS DDK ELEVAGE !</p>
+            <div style="text-align:center; margin-top:20px;">
+                <button onclick="closePopup()">Fermer</button>
+            </div>
+        </div>
     </div>
-  </div>
-</div>
 
 <!-- SCRIPT POUR AFFICHER UNE SEULE FOIS -->
 <script>
