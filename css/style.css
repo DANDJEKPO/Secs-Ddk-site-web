@@ -420,7 +420,7 @@ body {
 
 
 /* Médias queries pour les appareils mobiles */
-@media (max-width: 768px) {
+@media (max-width: 400px) {
     /* Pour les tablettes et smartphones en mode paysage */
     header {
         padding: 10px;
@@ -435,7 +435,7 @@ body {
     }
 
     h1, h2 {
-        font-size: 1.5rem;
+        font-size: 1rem;
     }
 
     p {
@@ -444,7 +444,7 @@ body {
 }
 
 /* Médias queries pour les smartphones (moins de 480px) */
-@media (max-width: 480px) {
+@media (max-width: 300px) {
     header {
         padding: 8px;
     }
@@ -458,7 +458,7 @@ body {
     }
 
     h1 {
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
 
     h2 {
@@ -470,14 +470,14 @@ body {
     }
 
     button {
-        width: 70%;
+        width: 50%;
         padding: 12px;
         font-size: 1.1rem;
     }
 }
 
 /* Médias queries pour les écrans plus grands (ordinateurs de bureau, tablettes larges) */
-@media (min-width: 1000px) {
+@media (min-width: 900px) {
     header {
         padding: 20px;
     }
