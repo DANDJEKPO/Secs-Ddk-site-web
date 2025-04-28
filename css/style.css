@@ -435,8 +435,8 @@ input, textarea, select, button {
 
 .bar {
   width: 25px;
-  height: 3px;
-  background-color: #333; /* Couleur des barres */
+  height: 5px;
+  background-color: #ccc; /* Couleur des barres */
   margin: 4px 0;
   transition: all 0.3s ease;
 }
@@ -450,7 +450,7 @@ input, textarea, select, button {
   nav ul {
     display: none; /* Masque le menu sur mobile */
     flex-direction: column; /* Les éléments du menu se placent en colonne */
-    gap: 20px; /* Espace entre les éléments du menu */
+    gap: 10px; /* Espace entre les éléments du menu */
     width: 100%; /* Assure que le menu occupe toute la largeur */
   }
 
