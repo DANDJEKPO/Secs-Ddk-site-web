@@ -286,3 +286,22 @@ footer p {
     }
 }
 
+html, body {
+    height: 100%; /* Assure que la page et le corps prennent toute la hauteur de l'écran */
+    overflow-y: auto; /* Permet le défilement vertical */
+    scroll-behavior: smooth; /* Applique un défilement fluide */
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+section {
+    padding: 60px 20px;
+    text-align: center;
+    height: auto; /* Laissez la section se redimensionner */
+}
+
+/* Ajoutez d'autres règles selon votre design */
