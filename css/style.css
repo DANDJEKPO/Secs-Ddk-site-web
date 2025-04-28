@@ -314,15 +314,23 @@ html, body {
 
 /* HEADER */
 header {
-  background-color: #1e7c7c; /* Bleu-vert */
+  background-color: #1e7c7c;
   color: #fff;
-  padding: 5px 10px;
+  padding: 2px 5px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
   width: 100%;
 }
+
+/* Ajustement automatique pour mobiles */
+@media (max-width: 768px) {
+  header {
+    padding: 2px 5px;
+  }
+}
+
 
 /* IMAGES */
 img {
