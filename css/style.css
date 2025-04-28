@@ -20,64 +20,58 @@ a {
 
 /* Header Styles */
 header {
-    background-color: #006f5f;
-    padding: 20px;
+    background-color: #006f5f; /* Bleu-vert sombre */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Style pour la navigation */
+header h1 {
+    font-size: 36px;
+    letter-spacing: 1px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+
+/* Navigation Bar */
+nav {
+    background-color: #009688; /* Bleu-vert moyen */
+    padding: 10px 0;
+}
+
 nav ul {
     display: flex;
-    gap: 20px;
-    background-color: #0099ff;
+    justify-content: center;
     list-style: none;
-    padding: 0;
-    justify-content: center; /* Centrer les éléments */
+}
+
+nav ul li {
+    margin: 0 20px;
 }
 
 nav ul li a {
     color: white;
-    text-decoration: none;
-    font-weight: bold;
     font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 5px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
 }
 
-/* Menu principal */
-.menu {
-    display: flex;
-    gap: 20px;
-    background-color: #009688;
-    padding: 15px 30px;
-}
-
-.menu a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-/* Liens du menu */
-nav a {
-    color: #ffffff;
-    text-decoration: none;
-    padding: 10px 15px;
-    font-weight: bold;
-    transition: background 0.3s ease;
-}
-
-/* Effet au survol */
-nav a:hover {
-    background-color: #00796b;
-    border-radius: 4px;
+nav ul li a:hover {
+    background-color: #00796b; /* Bleu-vert plus foncé au survol */
 }
 
 /* Hero Section */
 .hero {
-    background-image: url(https://raw.githubusercontent.com/DANDJEKPO/Secs-Ddk-site-web/refs/heads/main/3.jpg);
+    background-image: url('https://via.placeholder.com/1500x800'); /* Remplacer par une image propre */
     background-size: cover;
     background-position: center;
     color: white;
-    height: 50vh;
+    height: 80vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -87,7 +81,7 @@ nav a:hover {
 
 .hero h2 {
     font-size: 48px;
-    font-weight: 300;
+    font-weight: 700;
     letter-spacing: 1px;
     text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
     margin-bottom: 20px;
@@ -102,7 +96,7 @@ nav a:hover {
 .hero .cta-button {
     padding: 15px 30px;
     font-size: 18px;
-    background-color: #006f5f;
+    background-color: #006f5f; /* Bleu-vert sombre */
     color: white;
     border: none;
     border-radius: 30px;
@@ -112,7 +106,7 @@ nav a:hover {
 }
 
 .hero .cta-button:hover {
-    background-color: #00796b;
+    background-color: #00796b; /* Bleu-vert plus foncé au survol */
 }
 
 /* Section Styles */
@@ -123,8 +117,8 @@ section {
 
 section h2 {
     font-size: 36px;
-    font-weight: 300;
-    color: #006f5f;
+    font-weight: 600;
+    color: #006f5f; /* Bleu-vert sombre */
     margin-bottom: 30px;
     letter-spacing: 1px;
 }
@@ -160,7 +154,7 @@ section p {
 .card h3 {
     font-size: 24px;
     margin-bottom: 15px;
-    color: #006f5f;
+    color: #006f5f; /* Bleu-vert sombre */
 }
 
 .card p {
@@ -170,7 +164,7 @@ section p {
 
 /* Footer Styles */
 footer {
-    background-color: #006f5f;
+    background-color: #006f5f; /* Bleu-vert très sombre */
     color: white;
     padding: 20px 0;
     text-align: center;
@@ -183,15 +177,16 @@ footer p {
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    .hero {
-        height: 60vh;
-    }
-
     .hero h2 {
-        font-size: 28px;
+        font-size: 36px;
     }
 
     .hero p {
+        font-size: 18px;
+    }
+
+    .hero .cta-button {
+        padding: 12px 25px;
         font-size: 16px;
     }
 
@@ -206,10 +201,19 @@ footer p {
     .cards-container {
         grid-template-columns: 1fr;
     }
+}
 
-    nav ul {
-        flex-direction: column;
-        gap: 10px;
+@media (max-width: 480px) {
+    .hero {
+        height: 60vh;
+    }
+
+    .hero h2 {
+        font-size: 28px;
+    }
+
+    .hero p {
+        font-size: 16px;
     }
 }
 
@@ -222,6 +226,7 @@ footer p {
 
 .blink {
     animation: blink 2s step-start infinite;
+    
 }
 
 /* Conteneur pour faire défiler le texte */
@@ -263,77 +268,18 @@ footer p {
     animation: rotate 2s infinite linear;
 }
 
-/* Menu Hamburger */
-.menu-toggle {
-    display: none;
-    flex-direction: column;
-    background: transparent;
-    border: none;
-    cursor: pointer;
-    padding: 10px;
-    z-index: 9999;
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 400px;
 }
 
-.bar {
-    width: 25px;
-    height: 5px;
-    background-color: #ccc;
-    margin: 4px 0;
-    transition: all 0.3s ease;
+.logo img {
+    height: 110px;
+    width: auto;
 }
-
-/* Affichage du bouton sur mobile */
-@media (max-width: 768px) {
-    .menu-toggle {
-        display: flex;
-    }
-
-    nav ul {
-        display: none;
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    nav.active ul {
-        display: flex;
-    }
-}
-
-/* Ajustements pour les images et formulaires */
-img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-}
-
-input, textarea, select, button {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-/* Cible uniquement l'élément qui contient l'en-tête */
-.davinci-header-container {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background-color: white;
-    z-index: 500;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-/* Responsive for smaller screens */
-@media (max-width: 480px) {
-    .hero {
-        height: 50vh;
-    }
-    
-    .header-container {
-        flex-direction: column;
-        align-items: center;
-    }
 
     .logo img {
         height: 50px;
