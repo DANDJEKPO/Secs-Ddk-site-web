@@ -35,7 +35,6 @@ nav ul {
   padding: 0;
   gap: 80px; /* Ajoute de l'espace entre les éléments */
   background-color:#0099ff; /* 🎯 Cette ligne applique la couleur de fond de la barre */
-  /* D'autres styles : padding, display, etc. */
 }
 
 nav ul li a {
@@ -44,8 +43,6 @@ nav ul li a {
   font-weight: bold;
   font-size: 18px;
 }
-
-
 
 /* Menu principal en pleine largeur */
 .menu {
@@ -83,7 +80,6 @@ nav a:hover {
   background-color: #00796b; /* Vert plus foncé au survol */
   border-radius: 4px;
 }
-
 
 /* Hero Section */
 .hero {
@@ -221,6 +217,18 @@ footer p {
     .cards-container {
         grid-template-columns: 1fr;
     }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        background-color: #0099ff;
+        padding: 10px 0;
+    }
+
+    nav ul.show {
+        display: block;
+    }
 }
 
 @media (max-width: 480px) {
@@ -235,41 +243,20 @@ footer p {
     .hero p {
         font-size: 16px;
     }
-}
 
-/* Animation du texte qui clignote */
-@keyframes blink {
-    0% { opacity: 1; }
-    50% { opacity: 0; }
-    100% { opacity: 1; }
-}
-
-.blink {
-    animation: blink 2s step-start infinite;
-    
-}
-
-/* Conteneur pour faire défiler le texte */
-.scroll-text-wrapper {
-    display: inline-block;
-    white-space: nowrap;
-    overflow: hidden;
-}
-
-/* Animation du texte qui défile de manière fluide */
-@keyframes scrollText {
-    0% {
-        transform: translateX(0);
+    .menu-toggle {
+        display: block;
     }
-    100% {
-        transform: translateX(-100%);
-    }
-}
 
-.scroll-text {
-    display: inline-block;
-    white-space: nowrap;
-    animation: scrollText 20s linear infinite;
+    .menu {
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .menu.show {
+        display: flex;
+    }
 }
 
 /* Rotation de l'icône */
@@ -287,264 +274,5 @@ footer p {
     display: inline-block;
     animation: rotate 2s infinite linear;
 }
-.header-container {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-    gap: 20px; /* Réduit l'espacement pour éviter le débordement */
-    padding: 0 20px; /* Ajoute un peu de padding horizontal */
-}
 
-.logo img {
-    height: 110px;
-    width: auto;
-}
-html, body {
-    overflow-x: hidden;
-    width: 100%;
-}
-/* Reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
-/* HEADER */
-header {
-  background-color: #1e7c7c; /* Bleu-vert */
-  color: #fff;
-  padding: 15px 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  width: 100%;
-}
-
-/* IMAGES */
-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-}
-
-/* FORMS */
-input, textarea, select, button {
-  width: 50%;
-  padding: 10px;
-  margin-bottom: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-/* RESPONSIVE */
-@media (max-width: 768px) {
-  nav ul {
-    display: none;
-    flex-direction: column;
-    width: 100%;
-    background-color: #1e7c7c;
-    padding: 10px 0;
-  }
-
-  nav ul.show {
-    display: flex;
-  }
-
-  .menu-toggle {
-    display: block;
-  }
-
-  main h1 {
-    font-size: 1.4rem;
-  }
-.notre-discipline {
-  padding: 40px 20px;
-  background-color: #f0f9f8;
-  text-align: center;
-}
-
-.notre-discipline h2 {
-  color: #00796b;
-  margin-bottom: 30px;
-  font-size: 28px;
-}
-
-.discipline-galerie {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 30px;
-}
-
-.discipline-item {
-  max-width: 300px;
-}
-
-.discipline-item img {
-  width: 100%;
-  height: auto;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-.discipline-item p {
-  margin-top: 10px;
-  color: #333;
-  font-size: 16px;
-}
-
-  main p, main li {
-    font-size: 0.95rem;
-  }
-}
-/* Cible uniquement l'élément qui contient l'en-tête */
-.davinci-header-container {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: white;
-    z-index: 1000;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-/* Optionnel : ajoute une marge pour le contenu qui sera en dessous de l'en-tête fixe */
-body {
-    padding-top: 300px; /* Ajuste selon la hauteur de ton en-tête */
-}
-/* Style général du corps de la page */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Exemple de style de container principal */
-.container {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-/* En-tête */
-header {
-    background-color: #1e293b;
-    color: white;
-    padding: 15px;
-    text-align: center;
-}
-
-/* Exemple de section */
-section {
-    margin-top: 20px;
-    padding: 20px;
-    background-color: #f9f9f9;
-}
-
-/* Médias queries pour les appareils mobiles */
-@media (max-width: 768px) {
-    /* Pour les tablettes et smartphones en mode paysage */
-    header {
-        padding: 10px;
-    }
-
-    .container {
-        padding: 10px;
-    }
-
-    section {
-        padding: 10px;
-    }
-
-    h1, h2 {
-        font-size: 1.5rem;
-    }
-
-    p {
-        font-size: 1rem;
-    }
-}
-
-/* Médias queries pour les smartphones (moins de 480px) */
-@media (max-width: 480px) {
-    header {
-        padding: 8px;
-    }
-
-    .container {
-        padding: 5px;
-    }
-
-    section {
-        padding: 5px;
-    }
-
-    h1 {
-        font-size: 1.2rem;
-    }
-
-    h2 {
-        font-size: 1rem;
-    }
-
-    p {
-        font-size: 0.9rem;
-    }
-
-    button {
-        width: 100%;
-        padding: 12px;
-        font-size: 1.1rem;
-    }
-}
-
-/* Médias queries pour les écrans plus grands (ordinateurs de bureau, tablettes larges) */
-@media (min-width: 1200px) {
-    header {
-        padding: 20px;
-    }
-
-    .container {
-        padding: 20px;
-    }
-
-    section {
-        padding: 20px;
-    }
-
-    h1 {
-        font-size: 2rem;
-    }
-
-    h2 {
-        font-size: 1.5rem;
-    }
-
-    p {
-        font-size: 1.1rem;
-    }
-}
-
-/* Exemple de style pour les images afin qu'elles soient responsives */
-img {
-    max-width: 100%;
-    height: auto;
-}
-
-/* Style du bouton */
-button {
-    background-color: #1e293b;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #3b4b6f;
-}
