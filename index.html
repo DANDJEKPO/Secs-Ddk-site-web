@@ -341,15 +341,7 @@ i_agree_checkbox.run({"palette":"light","terms_and_conditions_url":"","privacy_p
     </style>
 </head>
 <body>
-    </script>
-    <script>
-  const menuToggle = document.querySelector('.menu-toggle');
-  const nav = document.querySelector('nav');
-
-  menuToggle.addEventListener('click', () => {
-    nav.classList.toggle('active');
-  });
-</script>
+    
     <!-- POPUP BIENVENUE SECS DDK ELEVAGE -->
     <div id="welcomePopup">
         <div id="popupContent">
@@ -386,7 +378,15 @@ i_agree_checkbox.run({"palette":"light","terms_and_conditions_url":"","privacy_p
       document.getElementById('welcomePopup').style.display = 'flex';
     }
   };
+</script>
+    <script>
+  const menuToggle = document.querySelector('.menu-toggle');
+  const nav = document.querySelector('nav');
 
+  menuToggle.addEventListener('click', () => {
+    nav.classList.toggle('active');
+  });
+</script>
 
 </body>
 </html>
