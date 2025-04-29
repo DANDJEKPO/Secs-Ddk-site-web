@@ -50,6 +50,12 @@
     </nav>  
 </header>
  </div>
+    <!-- Menu hamburger -->
+    <button class="menu-toggle" aria-label="Menu">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </button>
     <div class="container" id="content">
         <h1>Nos Services</h1>
         <div class="service">
@@ -94,6 +100,14 @@
 
     </footer>
     <script src="../js/script.js" defer></script> <!-- Lien vers ton fichier JavaScript -->
+ <script>
+  const menuToggle = document.querySelector('.menu-toggle');
+  const nav = document.querySelector('nav');
+
+  menuToggle.addEventListener('click', () => {
+    nav.classList.toggle('active');
+  });
+</script>
 </body>
 </html>
 
