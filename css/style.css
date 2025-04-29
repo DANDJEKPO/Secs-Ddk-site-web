@@ -12,7 +12,11 @@ body {
     color: #333;
     line-height: 1.6;
 }
-
+body::before {
+  content: "";
+  display: block;
+  height: 160px; /* correspond exactement à la hauteur de l'en-tête */
+}
 a {
     text-decoration: none;
     color: inherit;
@@ -423,13 +427,7 @@ input, textarea, select, button {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
       margin: 0;        /* Supprime toute marge extérieure */
     padding: 0;       /* Supprime tout padding interne */
-    height: 35px;     /* Définir une hauteur spécifique pour l'en-tête */
-}
-/* Espacement réservé en haut du corps de page pour que le contenu ne passe pas sous l'en-tête */
-body::before {
-  content: "";
-  display: block;
-  height: 35px; /* Ajuste selon la hauteur réelle de ton header */
+    height: 160px;     /* Définir une hauteur spécifique pour l'en-tête */
 }
 
 /* Menu Hamburger */
