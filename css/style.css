@@ -414,7 +414,7 @@ input, textarea, select, button {
 }
 /* Cible uniquement l'élément qui contient l'en-tête */
 .davinci-header-container {
-  position: relative;
+  position: fixed;
     top: 0;
     width: 100%;
     background-color: white;
@@ -422,7 +422,7 @@ input, textarea, select, button {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
       margin: 0;        /* Supprime toute marge extérieure */
     padding: 0;       /* Supprime tout padding interne */
-    height: 60px;     /* Définir une hauteur spécifique pour l'en-tête */
+    height: 35px;     /* Définir une hauteur spécifique pour l'en-tête */
 }
 
 
