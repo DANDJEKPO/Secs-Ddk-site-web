@@ -413,7 +413,7 @@ input, textarea, select, button {
 }
 /* Cible uniquement l'élément qui contient l'en-tête */
 .davinci-header-container {
-    position: fixed;
+    position: relative;
     top: 0;
     width: 100%;
     background-color: white;
