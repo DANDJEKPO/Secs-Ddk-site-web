@@ -15,7 +15,7 @@ body {
 body::before {
   content: "";
   display: block;
-  height: 210px; /* correspond exactement à la hauteur de l'en-tête */
+  height: 215px; /* correspond exactement à la hauteur de l'en-tête */
 }
 a {
     text-decoration: none;
