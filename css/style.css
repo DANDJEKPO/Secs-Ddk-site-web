@@ -80,7 +80,7 @@ nav a {
 
 /* Effet au survol */
 nav a:hover {
-  background-color: #00796b; /* Vert plus foncé au survol */
+  background-color: #ffffff; /* blanc pur au survol */
   border-radius: 4px;
 }
 
