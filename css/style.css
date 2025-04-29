@@ -71,7 +71,7 @@ nav .menu-links {
 
 /* Liens du menu */
 nav a {
-  color: #ffffff;
+  color: #000000; /* Noir */
   text-decoration: none;
   padding: 10px 15px;
   font-weight: bold;
@@ -80,7 +80,7 @@ nav a {
 
 /* Effet au survol */
 nav a:hover {
-  background-color: #ffffff; /* blanc pur au survol */
+  background-color: #009688; /* bleu vert pur au survol */
   border-radius: 4px;
 }
 
