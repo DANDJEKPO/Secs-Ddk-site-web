@@ -306,9 +306,7 @@ footer p {
     height: 60px; /* Taille fixe pour l'image */
     width: auto;
     max-width: 100%; /* Garantit que l'image ne dépasse pas la largeur de son conteneur */
-}
-.logo-titre {
-  gap: 100px; /* espace horizontal entre logo et titre */
+    gap: 100px; /* espace horizontal entre logo et titre */
 }
 
 html, body {
