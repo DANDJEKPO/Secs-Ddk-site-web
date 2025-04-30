@@ -308,9 +308,6 @@ footer p {
     max-width: 100%; /* Garantit que l'image ne dépasse pas la largeur de son conteneur */
 }
 .logo-titre {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     gap: 20px; /* espace entre logo et titre */
 }
 
