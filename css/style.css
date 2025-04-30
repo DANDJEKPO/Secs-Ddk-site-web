@@ -31,7 +31,6 @@ header {
 }
 
 /* Style pour la navigation */
-
 nav ul {
   width: 100%;/* Prend toute la largeur de l'écran */
   display: flex; /* Aligne les éléments en ligne */
@@ -41,6 +40,7 @@ nav ul {
   padding: 0;
   gap: 150px; /* Ajoute de l'espace entre les éléments */
   background-color:transparent;
+  margin-top: 10px; /* ajuste selon ton besoin */  
   /* D'autres styles : padding, display, etc. */
 }
 
