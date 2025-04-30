@@ -31,6 +31,13 @@ header {
 }
 
 /* Style pour la navigation */
+nav {
+  background-color: white; /* fond blanc comme du papier */
+  color: black;            /* texte noir ou foncé */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* optionnel : petite ombre douce */
+  z-index: 999;
+}
+
 nav ul {
   width: 100%;/* Prend toute la largeur de l'écran */
   display: flex; /* Aligne les éléments en ligne */
@@ -458,7 +465,7 @@ input, textarea, select, button {
   nav ul {
     display: none; /* Masque le menu sur mobile */
     flex-direction: column; /* Les éléments du menu se placent en colonne */
-    gap: 10px; /* Espace entre les éléments du menu */
+    gap: 5px; /* Espace entre les éléments du menu */
     width: 100%; /* Assure que le menu occupe toute la largeur */
   }
 
