@@ -40,7 +40,7 @@ nav ul {
   padding: 0;
   gap: 150px; /* Ajoute de l'espace entre les éléments */
   background-color:rgba(0, 0, 0, 0.5); /* Noir avec 50% de transparence */
-  margin-top: 10px; /* ajuste selon ton besoin */  
+  margin-top: 2px; /* ajuste selon ton besoin */  
   /* D'autres styles : padding, display, etc. */
 }
 
