@@ -278,7 +278,7 @@ footer p {
     animation: scrollText 20s linear infinite;
 }
 
-/* Rotation de l'icône */
+/* Rotation de l'icône */NT TRES
 @keyframes rotate {
     0% {
         transform: rotate(0deg);
@@ -307,6 +307,9 @@ footer p {
     width: auto;
     max-width: 100%; /* Garantit que l'image ne dépasse pas la largeur de son conteneur */
 }
+.logo-titre {
+  gap: 100px; /* espace horizontal entre logo et titre */
+}
 
 html, body {
     width: 100%;
@@ -316,7 +319,7 @@ html, body {
 }
 
 /* Reset */
-* {
+* {A 
   margin: 0;
   padding: 0;
   box-sizing: border-box;
