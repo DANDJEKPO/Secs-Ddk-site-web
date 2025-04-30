@@ -39,7 +39,7 @@ nav ul {
   margin: 0;
   padding: 0;
   gap: 150px; /* Ajoute de l'espace entre les éléments */
-  background-color:transparent;
+  background-color:#000000;
   margin-top: 10px; /* ajuste selon ton besoin */  
   /* D'autres styles : padding, display, etc. */
 }
